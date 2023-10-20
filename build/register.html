@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Resgister Page</title>
+</head>
+    
+<body>
+    <header class="header-contact">
+        <nav class="nav-bar container mx-auto px-8 pt-10 pb-3 justify-between items-center hidden md:flex">
+            <div class="font-bold">
+                <a class="brand-name" href="#home">
+                    get<span>linked</span>
+                </a>
+            </div>
+            <div>
+                <ul class=" hidden lg:flex items-center">
+                    <li><a href="" class=" nav-item hover:text-pink-200 ease-in duration-200">Timeline</a></li>
+                    <li><a href="" class="nav-item hover:text-pink-200 ease-in duration-200">Overview</a></li>
+                    <li><a href="" class="nav-item hover:text-pink-200 ease-in duration-200">FAQs</a></li>
+                    <li><a href="" class="nav-item nav-item-contact hover:text-pink-200 ease-in duration-200">Contact</a></li>
+
+                    <li><button class="register-button-stroke px-9 py-2 rounded-md hover:opacity-80 ease-in duration-200 ">Register</button></li>
+                </ul>
+            </div>
+
+                <!--Mobile Screen-->
+                <div id="hamburger" class="lg:hidden cursor-pointer z-50">
+                    <img class="menu-icon" src="./img/menu-icon.svg" alt="">
+                    <!-- <img class="" src="./img/close-icon.svg" alt=""> -->
+                  </div>
+        
+                  <div id="menu" class="hidden-menu hidden h-3/4  absolute inset-0 rounded-md">
+                    <ul class="hamburger-list pt-28 ml-10 space-y-6">
+                        <li><a id="hLink" href="#" class="h-a hover:text-pink-200 ease-in duration-200">Timeline</a></li>
+                        <li><a id="hLink" href="#" class="h-a hover:text-pink-200 ease-in duration-200">Overview</a></li>
+                        <li><a id="hLink" href="#" class="h-a hover:text-pink-200 ease-in duration-200">FAQs</a></li>
+                        <li><a id="hLink" href="#" class="h-a hover:text-pink-200 ease-in duration-200">Contact</a></li>
+        
+                        <li class="h-r-b register-button bg-pink-500 px-9 py-4 rounded-md hover:opacity-80 ease-in duration-200">
+                            <a href="register.html"><button>Register</button></li></a>   
+                    </ul>
+                  </div>
+                </nav>
+            </header>
+
+        <!--main-section-->
+        <section id="introduction-section" class="section-3 relative pb-20">
+
+            <div class="purple-blob w-52 h-52 md:w-80 md:h-80 absolute left-0 -top-10 md:left-32 md:top-20 overflow-hidden blur-3xl opacity-30 rounded-full"></div> 
+
+            <div class="purple-blob w-52 h-52 md:w-80 md:h-80 absolute right-0 bottom-40 md:bottom-0 md:right-0 overflow-hidden blur-2xl opacity-30  rounded-l-lg -z-10"></div> 
+
+            <div class="container pt-10 pb-2 px-10 lg:px-24">
+                <div class="flex flex-col items-center justify-between md:flex-row ">
+
+                    <div class="left-column left-column-contact mb-12 md:w-1/2 px-4 text-center md:text-left space-y-3 hidden lg:block z-20">
+                        <img class="" src="./img/man-sitting.svg" alt="">
+                    </div>
+
+                    <!--Right Column-->
+                    <div class="right-column contact-container text-center md:text-left md:w-1/2 md:ml-20 md:px-8">
+                        
+                       
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+
+        <div class="container mb-20">
+            <form action="">
+                <div class="content">
+                    <div class="input-box">
+                        <label for="">Full Name</label>
+                        <input type="text" placeholder="testing 123">
+                    </div>
+                    <div class="input-box">
+                        <label for="">Full Name</label>
+                        <input type="text" placeholder="testing 123">
+                    </div>
+                    <div class="input-box">
+                        <label for="">Full Name</label>
+                        <input type="text" placeholder="testing 123">
+                    </div>
+                    <div class="input-box">
+                        <label for="">Full Name</label>
+                        <input type="text" placeholder="testing 123">
+                    </div>
+                    <div class="input-box">
+                        <label for="">Full Name</label>
+                        <input type="text" placeholder="testing 123">
+                    </div>
+                    <div class="input-box">
+                        <label for="">Full Name</label>
+                        <input type="text" placeholder="testing 123">
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <button>Register</button>
+                </div>
+
+            </form>
+        </div>
+
+
+
+
+
+
+
+
+    <form action="" id="registration-form">
+        <input type="text" name="Team's Name" id="teamName" placeholder="Enter the name of your group">
+
+        <input type="text" name="Phone" id="phone" placeholder="Enter your phone number">
+
+        <input type="text" name="Email" id="email" placeholder="Enter your email address">
+
+        <input type="text" name="Project Topic" id="projectTopic" placeholder="What is your project topic?">
+
+        <select name="Category" id="category" placeholder="Select your category"></select>
+
+        <select name="Group Size" id="groupSize" placeholder="select"><option value="1">1</option></select>
+
+        <input type="checkbox" id="isPrivacyPolicyAccepted" required>
+
+        <button type="submit">Sumbit</button>
+    </form>
+
+    <script>
+    const form = document.getElementById("registration-form")
+    window.onload = async (event) => {
+        let categories = null;
+       // alert('Fetching Categories')
+        async function fetchCategories() {
+            return new Promise(async (resolve, reject) => {
+                try {
+                const response = await fetch('https://backend.getlinked.ai/hackathon/categories-list');
+
+                if (!response.ok) {
+                    throw new Error(`Error getting categories from the server`);
+                }
+
+                const data = await response.json();
+                resolve(data);
+                } catch (error) {
+                reject(error);
+                }
+            });
+        }
+
+        function createDropdownOptions(data) {
+            const selectElement = document.getElementById('category')
+
+            // selectElement.innerHTML = ''
+
+            data.forEach((optionData) => {
+                const option = document.createElement(`option`)
+                option.value = optionData.id
+                option.textContent = optionData.name
+                selectElement.appendChild(option)
+            })
+        }
+
+        await fetchCategories()
+        .then((data) => {
+            createDropdownOptions(data)
+            console.log(data)
+            console.log('Data gotten')
+        }).catch((error) => {
+            console.error("Error:", error);
+        });
+    }
+
+    form.addEventListener("submit", async function (event) {
+        event.preventDefault()
+        await submitForm()
+
+    })
+
+    async function submitForm() {
+        const teamName = document.getElementById("teamName")
+        const phone = document.getElementById("phone")
+        const email = document.getElementById("email")
+        const projectTopic = document.getElementById("projectTopic")
+        const userEmail = document.getElementById("userEmail")
+        const category = document.getElementById("category")
+        const groupSize = document.getElementById("groupSize")
+        const isPrivacyPolicyAccepted = document.getElementById("isPrivacyPolicyAccepted")
+
+        if (isPrivacyPolicyAccepted.checked) {
+            isPrivacyPolicyAccepted.value = true
+        } else {
+            isPrivacyPolicyAccepted.value = false
+        }
+
+        const data = {
+            email: email.value,
+            phone_number: phone.value,
+            team_name: teamName.value,
+            group_size: parseInt(groupSize.value),
+            project_topic: projectTopic.value,
+            category: parseInt(category.value),
+            privacy_policy_accepted: isPrivacyPolicyAccepted.value
+        }
+
+        try {
+            const response = await fetch('https://backend.getlinked.ai/hackathon/registration', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            
+            if (!response.ok) {
+                throw new Error('Error submitting form')
+            }
+
+            const serverData = await response.json()
+
+            console.log('Server response:', serverData)
+        } catch(error) {
+            console.error('Error:', error)
+        }
+
+        email.value = ''
+        phone.value = ''
+        teamName.value = ''
+        groupSize.value = ''
+        projectTopic.value = ''
+        category.value = ''
+        isPrivacyPolicyAccepted.value = ''
+
+
+    }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:wght@200;300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:wght@200;300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;600;700&family=Unica+One&display=swap" rel="stylesheet">
+</head>
+
+<body class="">
+    <header class="header">
+        <nav class="nav-bar container mx-auto px-8 pt-10 pb-3 flex justify-between items-center">
+            <div class="font-bold">
+                <a class="brand-name" href="#home">
+                    get<span>linked</span>
+                </a>
+            </div>
+            <div>
+                <ul class=" hidden lg:flex items-center">
+                    <li><a href="" class=" nav-item hover:text-pink-200 ease-in duration-200">Timeline</a></li>
+                    <li><a href="" class="nav-item hover:text-pink-200 ease-in duration-200">Overview</a></li>
+                    <li><a href="" class="nav-item hover:text-pink-200 ease-in duration-200">FAQs</a></li>
+                    <li><a href="" class="nav-item nav-item-contact hover:text-pink-200 ease-in duration-200">Contact</a></li>
+
+                    <li><button class="register-button px-9 py-3 rounded-md hover:opacity-80 ease-in duration-200 ">Register</button></li>
+                </ul>
+            </div>
+
+            <!--Mobile Screen-->
+          <div id="hamburger" class="lg:hidden cursor-pointer z-50">
+            <img class="menu-icon" src="./img/menu-icon.svg" alt="">
+            <!-- <img class="" src="./img/close-icon.svg" alt=""> -->
+          </div>
+
+          <div id="menu" class="hidden-menu hidden h-3/4  absolute inset-0 rounded-md z-20">
+            <ul class="hamburger-list pt-28 ml-10 space-y-6">
+                <li><a id="hLink" href="#" class="h-a hover:text-pink-200 ease-in duration-200">Timeline</a></li>
+                <li><a id="hLink" href="#" class="h-a hover:text-pink-200 ease-in duration-200">Overview</a></li>
+                <li><a id="hLink" href="#" class="h-a hover:text-pink-200 ease-in duration-200">FAQs</a></li>
+                <li><a id="hLink" href="#" class="h-a hover:text-pink-200 ease-in duration-200">Contact</a></li>
+
+                <li class="h-r-b register-button bg-pink-500 px-9 py-4 rounded-md hover:opacity-80 ease-in duration-200">
+                    <a href="register.html"><button>Register</button></li></a>   
+            </ul>
+          </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- hero section -->
+        <section id="home" class="section-container pb-0 lg:ps-20 relative"> 
+
+            <div class="purple-blob w-80 h-80 absolute top-0 md:left-32  blur-3xl opacity-30 overflow-hidden rounded-full "></div>
+
+            <img class="absolute left-28 top-20 lg:w-4 w-3" src="./img/star-1.svg" alt="">
+
+            <img class="absolute lg:inset-x-2/4 lg:top-28 lg:w-4 w-2 top-20 right-12 " src="./img/star-2.svg " alt="">
+
+            <img class="absolute lg:bottom-40 w-4 lg:left-96" src="./img/star-3.svg" alt="">
+            <!-- mx-auto me-0 pt-8 ..revisit-->
+            <div class="container pt-8 mb-0 pb-0 px-">
+                <div class="right-aligned-heading text-center text-base md:text-3xl md:text-end md:pr-9">Igniting a Revolution in <div class="inline relative -z-50">HR Innovation 
+                    <img class="pink-curve absolute md:w-56 -z-10" src="./img/pink-curve.svg" alt="">   
+                </div>
+                 
+                </div>
+                <div class="flex flex-col items-center z-20 md:flex-row mt-12">
+                    <div class="left-column text-center mb-12 md:text-left md:w-1/2 md:pr-10">
+                        <div class="space-y-4 mb-5 md:mb-12 md:mt-10">
+
+                            <div class="heading-box flex gap-0 space-x-0">
+                                <h1 class=" text-3xl md:text-6xl">getlinked Te<div class="inline relative m-0 px-0 -z-10 -ms-1 md:-ms-2">
+                                    <img class="small-light-bulb absolute" src="./img/lightbulb.svg" alt="">
+                                    c</div>h 
+                               Hackathon<span>1.0  </span>
+                                </h1>
+
+                                <img class="hidden lg:block w-8 lg:w-16" src="./img/chain.svg" alt="">
+                                <img class=" hidden lg:block w-8 lg:w-16 ml-0" src="./img/pow.svg" alt="">
+                            </div>
+                            
+                            <p class="md:w-11/12 px-10 md:px-0 text-sm md:text-lg text-white ">Participate in getlinked tech Hackathon 2023 stand a chance to win a Big prize</p>
+                            <button class="register-button px-9 py-3 rounded-md hover:opacity-80 ease-in duration-200 ">Register</button>
+                        </div>
+                        <div class="timer-box">
+                            <p>00<span>H</span> 00<span>M</span> 00<span>S</span></p>
+                        </div>
+                    </div>
+
+                    <div class="right-column md:w-1/2 relative">
+                        <img class="futuristic-ball absolute px-10 opacity-75" src="./img/futuristic-ball.svg" alt="">
+                        <img class="man-image" src="./img/futuristic-man.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Section 2-->
+        <section id="introduction-section" class="section-2 section-container relative pb-10">
+            <img class="absolute top-40 left-20" src="./img/pink-star.svg" alt="">
+            <img class="absolute top-40 right-20 lg:top-40 lg:right-40 w-3" src="./img/purple-star.svg" alt="">
+
+            <div class="container pt-10 pb-2 px-10 lg:px-20">
+                <div class="flex flex-col items-center justify-between md:flex-row ">
+                    <div class="left-column mb-12 md:w-1/2 px-7 relative">
+                        <img src="./img/The big idea.svg" alt="">
+                        <img class=" w-6 inset-x-2/4 absolute lg:right-0 md:bottom-1 md:w-6" src="./img/arrow.svg" alt="">
+                    </div>
+
+                    <div class="right-column  text-center md:text-left md:w-1/2 md:ml-20">
+                        <h1 class="introduction  mb-4">Introduction to getlinked <br> <span>tech Hackathon 1.0</span></h1>
+                        <p class="text-white text-sm">Our tech hackathon is a melting pot of visionaries, and its purpose is as
+                            clear as day: to shape the future. Whether you're a coding genius, a 
+                            design maverick, or a concept wizard, you'll have the chance to transform 
+                            your ideas into reality. Solving real-world problems, pushing the boundaries
+                            of technology, and creating solutions that can change the world,
+                            that's what we're all about!</p>
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+        <!--Section 3-->
+        <section id="introduction-section" class="section-3 section-container relative">
+
+            <div class="purple-blob w-52 h-52 md:w-80 md:h-80 absolute left-0 -top-10 md:left-32 md:top-20 overflow-hidden blur-2xl opacity-30 rounded-l-lg -z-10"></div> 
+
+
+            <div class="purple-blob w-52 h-52 md:w-80 md:h-80 absolute right-0 bottom-40 md:bottom-0 md:right-0 overflow-hidden blur-2xl opacity-30  rounded-l-lg -z-10"></div> 
+
+            <div class="container pt-10 pb-2 px-10 lg:px-20">
+                <div class="flex flex-col-reverse items-center justify-between md:flex-row ">
+
+                    <div class="left-column mb-12 md:w-1/2 px-4 text-center md:text-left relative">
+                        <img class="absolute lg:right-40 right-0" src="./img/star-2.svg" alt="">
+
+                        <h1 class="section-3-text  mb-4">Rules and <br> <span>Guidelines</span></h1>
+                        <p class="text-white text-sm">Our tech hackathon is a melting pot of visionaries, and its purpose is as
+                            clear as day: to shape the future. Whether you're a coding genius, a 
+                            design maverick, or a concept wizard, you'll have the chance to transform 
+                            your ideas into reality. Solving real-world problems, pushing the boundaries
+                            of technology, and creating solutions that can change the world,
+                            that's what we're all about!</p>
+                    </div>
+
+                    <div class="right-column relative text-center md:text-left md:w-1/2 md:ml-20">
+                        <img class="absolute left-0 bottom-32 w-4" src="./img/star-1.svg" alt="">
+                       <img src="./img/woman-sitting.svg" alt="">
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+        <!--Section 4-->
+        <section id="introduction-section" class="section-4 section-container pt-10 pb-20 relative">
+
+            <div class="purple-blob w-52 h-52 md:w-80 md:h-80 absolute bottom-32 right-0 md:-bottom-20 md:right-0 blur-3xl opacity-30 overflow-hidden rounded-full -z-10"></div>
+
+            <div class="container pt-10 pb-2 px-10 lg:px-20">
+
+                <div class="flex flex-col items-center justify-between md:flex-row">
+                    <div class="left-column relative mb-12 md:w-1/2 px-7">
+                        <div class="purple-blob w-40 h-40 md:w-80 md:h-80 absolute -bottom-10 blur-2xl opacity-30 overflow-hidden rounded-full -z-10"></div>
+
+                        <img class="absolute top-5 left-36" src="./img/purple-star.svg" alt="">
+
+                        <img class="absolute top-40 right-32 w-4" src="./img/star-2.svg" alt="">
+
+                        <img class="man-and-woman-image md:mt-20" src="./img/man-and-woman.svg" alt="">
+                    </div>
+
+                    <div class="right-column  text-center md:text-left md:w-1/2 md:ml-20">
+                        <h1 class="introduction  mb-4">Judging Criteria<br> <span>Key attributes</span></h1>
+                        
+                        <div class="space-y-3 mb-10">
+                            <p class="text-white text-sm">
+                                <span class="pink-span">Innovation and Creativity: </span>Evaluate the uniqueness and creativity of the
+                                solution. Consider whether it addresses a real-world problem in a novel 
+                                way or introduces innovative features.
+                                </p>
+        
+                                <p class="text-white text-sm">
+                                <span class="pink-span">Functionality: </span> Assess how well the solution works. Does it perform its 
+                                intended functions effectively and without major issues? Judges would
+                                consider the completeness and robustness of the solution.
+                                </p>
+        
+                                <p class="text-white text-sm">
+                                <span class="pink-span">Impact and Relevance: </span> Determine the potential impact of the solution 
+                                in the real world. Does it address a significant problem, and is it relevant 
+                                to the target audience? Judges would assess the potential social, 
+                                economic, or environmental benefits.
+                                </p>
+        
+                                <p class="text-white text-sm">
+                                <span class="pink-span">Technical Complexity: </span>Evaluate the technical sophistication of the solution. 
+                                Judges would consider the complexity of the code, the use of advanced 
+                                technologies or algorithms, and the scalability of the solution.
+                                </p>
+        
+                                <p class="text-white text-sm">
+                                <span class="pink-span">Adherence to Hackathon Rules: </span>Judges will Ensure that the team adhered 
+                                to the rules and guidelines of the hackathon, including deadlines, use of 
+                                specific technologies or APIs, and any other competition-specific requirements.
+                                </p>
+        
+                        </div>
+                 
+                        <button class="register-button px-9 py-3 rounded-md hover:opacity-80 ease-in duration-200">Read More</button>
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+        <!--Section 5-->
+        <section id="introduction-section" class="section-3 section-container">
+
+            <div class="container pt-10 pb-2 px-10 lg:px-20">
+                <div class="flex flex-col items-center justify-between md:flex-row ">
+
+                    <div class="left-column mb-12 md:w-1/2 px-4 text-center md:text-left relative">
+
+                        <img class="absolute left-10 -z-10" src="./img/purple-star.svg" alt="">
+                        <h1 class="section-3-text  mb-4">Frequently Ask <br> <span>Question</span></h1>
+
+                        <p class="text-white text-sm">We got answers to the questions that you might <br> want to ask about <span class="font-bold">getlinked Hackathon 1.0</span></p>
+
+                        <!--List of FAQs-->
+                        <div class="mt-8 space-y-4 text-left ">
+                            <div class="flex mb-2">
+                                <p class="text-white text-sm mr-7 lg:pr-1">Can I work on a project I started before the hackathon?</p>
+                                <img src="./img/pink-plus-icon.svg" alt="">
+                            </div>
+                            <img src="./img/pink-line.svg" alt="">
+
+                            <div class="flex mb-2">
+                                <p class="text-white text-sm mr-7 lg:mr-12 lg:pr-1">What happens if I need help during the hackathon?</p>
+                                <img src="./img/pink-plus-icon.svg" alt="">
+                            </div>
+                            <img src="./img/pink-line.svg" alt="">
+
+                            <div class="flex mb-2">
+                                <p class="text-white text-sm mr-7 lg:mr-14 lg:pr-2">What happens if I don't have an idea for a project?</p>
+                                <img src="./img/pink-plus-icon.svg" alt="">
+                            </div>
+                            <img src="./img/pink-line.svg" alt="">
+
+                            <div class="flex mb-2">
+                                <p class="text-white text-sm mr-7 lg:mr-16 lg:pr-3">Can I join a team or do I have to come with one?</p>
+                                <img src="./img/pink-plus-icon.svg" alt="">
+                            </div>
+                            <img src="./img/pink-line.svg" alt="">
+
+                            <div class="flex mb-2">
+                                <p class="text-white text-sm mr-7 lg:mr-32 ">What happens after the hackathon ends</p>
+                                <img src="./img/pink-plus-icon.svg" alt="">
+                            </div>
+                            <img src="./img/pink-line.svg" alt="">
+
+                            <div class="flex mb-2">
+                                <p class="text-white text-sm mr-7 ">Can I work on a project I started before the hackathon?</p>
+                                <img src="./img/pink-plus-icon.svg" alt="">
+                            </div>
+                            <img src="./img/pink-line.svg" alt="">
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="right-column  text-center md:text-left md:w-1/2 md:ml-20 relative mt-20">
+                        <img class="absolute -top-10 left-16" src="./img/purple-question.svg" alt="">
+
+                        <img  class="absolute -top-20 left-40 " src="./img/pink-question.svg" alt="">
+
+                        <img  class="absolute -top-10 right-44 " src="./img/purple-question.svg" alt="">
+
+                       <img src="./img/thinking_man.svg" alt="">
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+        <!--Section 6-->
+        <section class="bg-pink-200">
+            Skippidy skip skip
+        </section>
+
+        <!--Section 7-->
+        <section id="introduction-section" class="section-7 section-container relative pb-10">
+
+            
+            <div class="purple-blob w-52 h-52 md:w-80 md:h-80 absolute top-32 left-0 md:bottom-20 md:right-0 blur-3xl opacity-40 overflow-hidden rounded-full -z-10"></div>
+
+            <div class="purple-blob w-52 h-52 md:w-80 md:h-80 absolute bottom-10 right-0 md:bottom-20 md:right-0 blur-3xl opacity-40 overflow-hidden rounded-full -z-10"></div>
+
+            <div class="container pt-14 pb-2 px-10 lg:px-20">
+
+                <div class="md:flex">
+                    <div class=" w-5/6">
+                        
+                    </div>
+                    <div class=" text-center lg:text-left">
+                        <h1 class="section-3-text mb-1 mb:mb-4">Prizes and<br><span>Rewards</span></h1>
+    
+                        <p class="text-white text-base mb-6">Highlight of the prizes or rewards for winners and for participants.
+                    </p>
+                    </div>
+                </div>
+               
+                
+                <div class="flex flex-col items-center justify-between md:flex-row ">
+                    <div class="left-column mb-12 md:w-1/2 px-7">
+                        <img src="./img/trophy-img.svg" alt="">
+                    </div>
+
+                    <div class="right-column  text-center md:text-left md:w-1/2 md:ml-20">
+                       <img src="./img/medals.svg" alt="">
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+        <!--section 8-->
+        <section class="mt-20 mb-20">
+            <div class="container pt-2 pb-2 px-10 lg:px-20">
+
+                <h1 class="section-3-text text-center mb-1 mb:mb-4">Partners and Sponsors</h1>
+
+                <p class="text-center text-white text-sm">Getlinked Hackathon 1.0 is honored to have the following major <br> companies as its partners and sponsors</p>
+
+                <div class="grid-container container w-full rounded-md mt-16">
+
+                    <div class="inner-container container py-8 px-10 lg:py-20 lg:px-32">
+
+                        <div class=" grid grid-cols-3 grid-rows-2 gap-6">
+                            <div class=" py-4 flex justify-center items-center relative"><img src="./img/Liberty company logo white colour.svg" alt="">
+                            <img class="vertical-pink-line absolute -right-4" src="./img/vertical-pink-line.svg" alt="">
+                            </div>
+                            
+
+                            <div class=" py-4 flex justify-center items-center relative"><img src="./img/Liberty company logo white-and-blue.svg" alt="">
+                            <img class="vertical-pink-line absolute -right-4" src="./img/vertical-pink-line.svg" alt=""></div>
+
+                            <div class=" py-4 flex justify-center items-center relative"><img src="./img/Winwise logo White colour 1.svg" alt="">
+                           </div>
+
+                            <div class=" py-4 flex justify-center items-center relative"><img src="./img/wisper logo white.svg" alt=""> <img class="vertical-pink-line absolute -right-4" src="./img/vertical-pink-line.svg" alt="">
+                            <img class="absolute -top-4" src="./img/short-horizontal-pink-line.svg" alt="">
+                            </div>
+
+
+                            <div class=" py-4 flex justify-center items-center relative">
+                                <p class="paybox lg:text-4xl text-white
+                                ">pay<span class="text-blue-400">box</span></p>
+                                <img class="vertical-pink-line absolute -right-4" src="./img/vertical-pink-line.svg" alt=""> <img class="absolute -top-4" src="./img/short-horizontal-pink-line.svg" alt=""></div>
+
+                            <div class=" py-4 flex justify-center items-center relative"><img src="./img/Vizual Plus.svg" alt="">
+                            <img class="absolute -top-4" src="./img/short-horizontal-pink-line.svg" alt=""></div>
+                        </div>
+        
+                    </div>
+                   
+                </div>
+                
+            </div>
+           
+        </section>
+
+        <!--Section 9-->
+        <section id="introduction-section" class="section-3 pb-10">
+
+            <div class="container pt-10 pb-2 px-4 lg:px-20">
+                <div class="flex flex-col justify-between md:flex-row ">
+
+                    <div class="left-column mb-12 md:w-1/2 px-4 text-center md:text-left">
+                        <h1 class="section-3-text  mb-4">Privacy Policy and<br> <span>Terms</span></h1>
+
+                        <p class="text-white text-xs md:text-sm opacity-75 mb-6">Last updated on September 12 2023</p>
+
+                        <p class="text-white text-xs md:text-sm mb-10">Below are our privacy & policy, which outline a 
+                        lot of goodies. it’s our aim to always take care of our participants</p>
+
+                       <div class="policy-container rounded-md py-10 px-5 lg:py-10 lg:px-10">
+                            <p class="text-white text-xs md:text-sm">At getlinked tech Hackathon 1.0, we value your privacy
+                            and are committed to protecting your personal information.
+                            This Privacy Policy outlines how we collect, use, disclose, 
+                            and safeguard your data when you participate in our tech 
+                            hackathon event. By participating in our event, you consent 
+                            to the practices described in this policy.</p>
+
+                            <p class="text-white text-xs md:text-sm pt-5 text-left">Licensing Policy</p>
+                            <p class="text-xs md:text-sm text-white text-left">Here are terms of our Standard License:</p>
+
+                            <div class="flex items-center mt-5">
+                                <img class="mr-4" src="./img/green-check.svg" alt="">
+                                <p class="text-xs md:text-sm text-white text-left">The Standard License grants you a non-exclusive right to
+                                navigate and register for our event</p>
+                            </div>
+
+                            <div class="flex mt-5">
+                                <img class="mr-4" src="./img/green-check.svg" alt="">
+                                <p class="text-xs md:text-sm text-white text-left">You are licensed to use the item available at any free source
+                                sites, for your project developement</p>
+                            </div>
+
+                            <button class="register-button px-9 py-3 rounded-md hover:opacity-80 mt-7 ease-in duration-200">Read More</button>
+                       </div>
+                    </div>
+
+
+
+                    <div class="right-column mb-20 md:text-left md:w-1/2 md:ml-20 pt-0 relative">
+                        <div class="">
+                            <img class="px-10 md:px-0" src="./img/gradient-keypad.svg" alt="">
+                            <img class="absolute top-20 md:top-32 px-10 md:px-0" src="./img/padlock-man.svg
+                            " alt="">
+                        </div> 
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+        <!--Footer section-->
+        <section class="footer-section">
+            <div class="container pt-10 pb-2 px-12 lg:px-20">
+                <div class="container py-10 text-xs text-white">
+                    <div class="grid gap-10 md:grid-cols-3 pb-10">
+                        <div class="">
+                            <div class="font-bold mb-4">
+                                <a class="brand-name" href="#home">
+                                    get<span>linked</span>
+                                </a>
+                            </div>
+                            <p class="mb-16">Getlinked Tech Hackathon is a technology innovation program 
+                            established by a group of organizations with the aim of showcasing young and talented individuals in the field of technology</p>
+                            <div class="flex gap-4">
+                                <p>Terms of Use</p>
+                                <img src="./img/Line 20.svg" alt="">
+                                <p>Privacy Policy</p>
+                            </div>
+                        </div>
+
+                        <div class="useful-links space-y-4 flex-col lg:ps-24">
+                            <p class="purple-text text-sm font-bold">Useful Links</p>
+                            <ul class="space-y-4">
+                                <li><a href="#">Overview</a></li>
+                                <li><a href="#">Timeline</a></li>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Register</a></li>
+                            </ul>
+                            <div class="flex space-x-4">
+                                <p class="purple-text">Follow us</p>
+                                <img src="./img/mdi_instagram.svg" alt="">
+                                <img src="./img/twitter.svg" alt="">
+                                <img src="./img/facebook-icon.svg" alt="">
+                                <img src="./img/ri_linkedin-fill.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="space-y-4 lg:ps-24">
+                            <p class="purple-text text-sm font-bold">Contact Us</p>
+                            <div class="flex space-x-4">
+                                <img src="./img/telephone.svg" alt="">
+                                <p>+234 6707653444</p>
+                            </div>
+                            <div class="flex space-x-4">
+                                <img src="./img/location.svg" alt="">
+                                <p>27, Alara Street <br>Yaba 100012 <br>Lagos State</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="text-center">All rights reserved. © getlinked Ltd.</p>
+                </div>
+            </div>    
+            </div>
+        </section>
+    </main>
+</body>
+
+
+
+
+<script>
+    //mobile menu
+    const hamburger = document.querySelector('#hamburger');
+    const menu = document.querySelector('#menu');
+    const hLink = document.querySelector('#hLink');
+    const menuIcon = document.querySelector(".menu-icon");
+    const faSolid = document.querySelector(".fa-solid");
+
+    hamburger.addEventListener("click", () => {
+        menu.classList.toggle('hidden');
+        faSolid.classList.toggle('fa-xmark')
+    })
+
+    hLink.foreach(link =>{
+        link.addEventListener('click', () =>{
+            menu.classList.toggle('hidden');
+            faSolid.classList.toggle('fa-xmark')
+        })
+    })
+</script>
+</html>
